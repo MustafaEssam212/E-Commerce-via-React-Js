@@ -1,0 +1,91 @@
+.ThParent{
+    background-color: #f9f9f9;
+    position: relative;
+    height: 100%;
+}
+
+@keyframes animateArrow {
+    from{
+        top: -40px;
+    }
+
+    to{
+        top: -60px;
+    }
+}
+
+.fa-arrow-up{
+    background-color: white;
+    color: #ff8b15;
+    border-radius: 50%;
+    padding: 12px;
+    font-size: 20px;
+    position: absolute;
+    top: -40px;
+    left: 45%;
+    transition: all .3s;
+    animation: animateArrow .8s linear forwards infinite;
+    cursor: pointer;
+}
+
+.fa-arrow-up:hover{
+    animation: none;
+}
+
+.proDetails{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.proDetails h1{
+    font-size: 27px;
+    color: rgba(0, 0, 0, 0.74);
+    margin: 40px;
+}
+
+.fa-arrow-left , .fa-arrow-right{
+    font-size: 20px;    
+}
+
+.fa-arrow-left{
+    color: rgb(190, 190, 190);
+}
+
+.fa-arrow-right{
+    cursor: pointer;
+}
+
+.arrows a{
+    color: black;
+    text-decoration: none;
+}
+.arrows{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 180px;
+    margin: 40px;
+}
+
+#column{
+    height: 40px;
+    width: 1px;
+    background-color: rgb(204, 204, 204);
+}
+
+@media (max-width: 800px){
+    .arrows{
+        margin: 10px
+    }
+    .proDetails h1{
+        margin: 10px;
+    }
+}
+
+@media (max-width: 500px){
+    .fa-arrow-up{
+        left: 41%
+    }
+}

@@ -1,0 +1,113 @@
+.products{
+  margin-left: 50px;
+}
+
+.product{
+    background-color: rgb(255, 255, 255);
+    height: 350px;
+    width: 290px;
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.product:hover{
+  -webkit-box-shadow: 0 0 10px rgb(175, 175, 175);
+  box-shadow: 0 0 10px rgb(175, 175, 175);
+  transform: scale(1.05,1.05);
+}
+
+.icons{
+  display: flex;
+  justify-content: space-between;
+}
+
+.pic{
+  width: 190px;
+  height: 140px;
+  margin: auto;
+  
+}
+
+
+
+.buying{
+  color: rgba(128, 128, 128, 0.452);
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.fa-heart{
+  color: rgba(128, 128, 128, 0.452);
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.fa-heart:hover{
+  color: rgb(238, 130, 130);
+}
+
+
+@keyframes showAnimate{
+  from{
+      top: 40px;
+  }
+
+  to{
+      top: 0px;
+  }
+}
+
+.show{
+  height: 40px;
+  outline: none;
+  border: none;
+  background-image: linear-gradient(to right, #ff8b15 , #ffb66d);
+  color: white;
+  font-family: 'Noto Sans JP', sans-serif;
+  position: relative;
+  top: 0px;
+  visibility: hidden;
+}
+
+.product:hover .show{
+  visibility: visible;
+  animation: showAnimate .2s linear forwards;
+}
+
+.propar{
+  color: black;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+.pwp{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 250px;
+}
+
+
+@media (max-width: 868px){
+  .products{
+    margin-left: 0px;
+  }
+  .product{
+    width: auto;
+  }
+}
+
+.love{
+  color: rgb(255, 0, 0);
+  transition: .5s all;
+}
+
+.love:hover{
+  color: red;
+}

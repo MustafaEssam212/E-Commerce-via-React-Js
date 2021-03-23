@@ -1,0 +1,114 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff8b15;
+}
+
+.header h1, #nav, i{
+    margin: 20px;
+}
+
+
+.naviss{
+    display: flex;
+    list-style: none;
+    margin-left: -55px;
+    font-family: 'Noto Sans JP', sans-serif;
+    z-index: 1000;
+    
+}
+
+.naviss li{
+    margin-right: 65px;
+    
+}
+
+.header a{
+    text-decoration: none;
+    color: white;
+}
+
+.naviss a:hover{
+    color: yellow;
+    transition: .2s ease-in-out;
+}
+
+.buy{
+    color: white;
+    font-size: 18px;
+    
+}
+
+
+
+.fa-bars{
+    position: absolute;
+    color: #ff8b15;
+    left: 70%;
+    font-size: 27px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    display: none;
+}
+
+.fa-bars:hover{
+    transition: .2s ease-in-out;
+    color: white;
+    background-color: rgb(163, 73, 40);
+    
+}
+
+@keyframes navAnimate {
+    0%{
+
+        top: -630px;
+
+    }
+
+    25%{
+        top: -472px;
+    }
+
+    50%{
+        top: -314px;
+    }
+
+    75%{
+        top: -156px;
+    }
+
+    100%{
+        top: 88px;
+    }
+}
+
+@media (max-width: 868px){
+    .naviss{
+        flex-direction: column;
+        position: absolute;
+        left: 0%;
+        top:  88px;
+        text-align: center;
+        background-color: orangered;
+        width: 100%;
+        margin-left: 0;
+        height: 100%;
+        
+    }
+
+    .navba{
+        display: none;
+    }
+
+    .naviss li{
+        margin: 20px 0px;
+        margin-right: 35px;
+        
+    }
+    .fa-bars{
+        display: block;
+    }
+}

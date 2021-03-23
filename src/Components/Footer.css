@@ -1,0 +1,57 @@
+.Footercont{
+    background-color: #ff8b15;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fleft{
+    font-family: 'Bangers', cursive;
+    font-size: 45px;
+    margin: 20px;
+    
+}
+.fleft p{
+    color: rgba(0, 0, 0, 0.808);
+}
+
+.fcenter{
+    width: 300px;
+    text-align: center;
+    font-family: 'Play', sans-serif;
+    font-size: 20px;
+}
+.fright{
+    font-family: 'Bangers', cursive;
+    font-size: 45px;
+    text-align: center;
+    margin: 20px;
+}
+
+.fright p{
+    color: rgba(0, 0, 0, 0.808);
+}
+
+.fright i{
+    color: rgba(255, 255, 255, 0.562);
+    cursor: pointer;
+    transition: .3s all;
+}
+
+.fright i:hover{
+    color: white;
+}
+
+@media (max-width: 700px){
+    .fleft{
+        font-size: 35px;
+        text-align: center;
+    }
+    .fright{
+        font-size: 35px;
+    }
+    .Conz{
+        display: flex;
+    }
+}
